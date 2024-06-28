@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Converter.css">
+    <title>Convert BlackMoneyt</title>
+</head>
+<body>
+      <img class="logo" src="./assets/logo.gif" alt="logo-convertmoney">
+    <main>
+        <label>
+            Convert <b>from</b>
+            <select class="currency-select-from">
+                <option value="" data-default disabled selected></option>
+                <option value="real">REAL</option>
+                <option value="dolar">DOLAR</option>
+                <option value="euro">EURO</option>
+                <option value="bitcoin">BITCOIN</option>
+            </select>
+        </label>
+        <label>
+            Convert <b>to</b>
+            <select class="currency-select-to">
+                <option value="" data-default disabled selected></option>
+                <option value="real">REAL</option>
+                <option value="dolar">DOLAR</option>
+                <option value="euro">EURO</option>
+                <option value="bitcoin">BITCOIN</option>
+            </select>
+        </label>
+        <label>
+            Value
+            <input class="input-currency" placeholder="Enter a Value">
+        </label>
+
+        <button class="convert-button">Convert</button>
+        
+        <section>
+            <div class="currency-box1">
+                <img class="currency-img1" src="./assets/Real.png" alt="converted currency">
+                <p class="currency-r1">Real</p>
+                <p class="currency-value-r1">R$</p>
+            </div> 
+
+            <img class="vector-img" src="./assets/Vector.png" alt="Vector">
+            
+            <div class="currency-box2">
+                <img class="currency-img"  src="./assets/Dolar.png" alt="currency to convert">
+                <p class="currency-us2">Dolar</p>
+                <p class="currency-value-us2">US$</p>
+            </div>
+        </section>
+    </main>
+
+</body>
+<script src="./Converter.js"></script>
+
+</html>
